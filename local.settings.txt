@@ -1,0 +1,12 @@
+// FunctionAppDemo/local.settings.json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=pocfel;AccountKey=seHbI8czOcl91qOxvelE3qy3RgEt/aav6yGNNznEqR0JyPKbKyC8ERlNk565brE6n3zSbYGaQTGw+ASth5yHcg==;EndpointSuffix=core.windows.net", // O tu connection string real
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    // Sustituye con la URL completa del endpoint de tu API en APIM
+    "APIM_ENDPOINT_URL": "https://apimpocjafe.azure-api.net/miserviciobackend/ObtenerDatosServicio", 
+    // Sustituye con tu clave de suscripción de API Management
+    "APIM_SUBSCRIPTION_KEY": "aed4b05b04c24e54932783b4fa7ed765" 
+  }
+}

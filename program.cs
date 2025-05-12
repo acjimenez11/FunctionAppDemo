@@ -1,10 +1,11 @@
+using Microsoft.Extensions.DependencyInjection; // Necesario para AddHttpClient
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 
 var host = new HostBuilder()
     .ConfigureFunctionsWorkerDefaults()
     .ConfigureServices(services => {
-        // Aquí puedes registrar servicios adicionales si los necesitas
+        // Registra IHttpClientFactory y los servicios relacionados de HttpClient
+        services.AddHttpClient(); 
     })
     .Build();
 
